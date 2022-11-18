@@ -1,0 +1,287 @@
+﻿<Window x:Class="Giao_dien_dang_nhap.Admin.MainAdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Giao_dien_dang_nhap.Admin" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        Title="MainAdminWindow" Height="800" Width="1400">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="305"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0"
+                  Background="#FF00CED1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Image Height="150" 
+                           Width ="150" 
+                           Source="hotel.png" 
+                           Stretch="Fill" 
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"/>
+                    <Label Height="51"  
+                           Content="TIU HOTEL"  
+                           Background="Transparent" 
+                           Foreground="White" 
+                           HorizontalContentAlignment="Center" 
+                           BorderBrush="Transparent"  
+                           FontSize="30" 
+                           FontWeight="Bold" 
+                           Margin="0,0,-0.2,0"
+                           VerticalAlignment="Bottom"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <materialDesign:PackIcon Kind="Room"
+                                                Foreground="White"
+                                                Width="50"
+                                                Height="40"
+                                                VerticalAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Button Content="Quản lý phòng"
+                                x:Name="RoomButton"
+                                Click="RoomButtom_Click"
+                                Height="50"
+                                FontSize="22"
+                                Width="256"
+                                HorizontalContentAlignment="Left"
+                                Background="Transparent"
+                                BorderBrush="Transparent" />
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <materialDesign:PackIcon Kind="AccountGroupOutline"
+                                                Foreground="White"
+                                                Width="50"
+                                                Height="40"
+                                                VerticalAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Button x:Name="GuestButton" Margin="0,0,0,5"
+                                Content="Quản lý khách hàng"
+                                Click="GuestButton_Click"
+                                Foreground="White"
+                                Height="50"
+                                FontSize="22"
+                                Width="256"
+                                HorizontalContentAlignment="Left"
+                                Background="Transparent"
+                                BorderBrush="Transparent"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <materialDesign:PackIcon Kind="ServiceToolbox"
+                                                Foreground="White"
+                                                Width="50"
+                                                Height="40"
+                                                VerticalAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Button Margin="0,0,0,5"
+                                Content="Quản lý dịch vụ"
+                                x:Name="ServiceButton"
+                                Click="ServiceButton_Click"
+                                Height="50"
+                                FontSize="22"
+                                Width="256"
+                                HorizontalContentAlignment="Left"
+                                Background="Transparent"
+                                BorderBrush="Transparent"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <materialDesign:PackIcon Kind="LivingRoom"
+                                                Foreground="White"
+                                                Width="50"
+                                                Height="40"
+                                                VerticalAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Button Margin="0,0,0,5"
+                                Content="Quản lý loại phòng"
+                                x:Name="RoomTypeButton"
+                                Click="RoomTypeButton_Click"
+                                Height="50"
+                                FontSize="22"
+                                Width="256"
+                                HorizontalContentAlignment="Left"
+                                Background="Transparent"
+                                BorderBrush="Transparent"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <materialDesign:PackIcon Kind="Fridge"
+                                                Foreground="White"
+                                                Width="50"
+                                                Height="40"
+                                                VerticalAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Button Margin="0,0,0,5"
+                            Content="Quản lý thiết bị"
+                            Height="50"
+                            x:Name="ThietBiButton"
+                            Click="ThietBiButton_Click"
+                            FontSize="22"
+                            Width="256"
+                            HorizontalContentAlignment="Left"
+                            Background="Transparent"
+                            BorderBrush="Transparent"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <materialDesign:PackIcon Kind="Account"
+                                                Foreground="White"
+                                                Width="50"
+                                                Height="40"
+                                                VerticalAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Button Margin="0,0,0,5"
+                                Content="Quản lý tài khoản"
+                                x:Name="TaiKhoanButton"
+                                Click="TaiKhoanButton_Click"
+                                Height="50"
+                                FontSize="22"
+                                Width="256"
+                                HorizontalContentAlignment="Left"
+                                Background="Transparent"
+                                BorderBrush="Transparent"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="7">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <materialDesign:PackIcon Kind="Company"
+                                                Foreground="White"
+                                                Width="50"
+                                                Height="40"
+                                                VerticalAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Button Margin="0,0,0,5"
+                                Content="Quản lý nhân viên"
+                                x:Name="NhanVienButton"
+                                Click="NhanVienButton_Click"
+                                Height="50"
+                                FontSize="22"
+                                Width="256"
+                                HorizontalContentAlignment="Left"
+                                Background="Transparent"
+                                BorderBrush="Transparent"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="85"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="590"></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="595"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Frame x:Name="Date" 
+                               VerticalAlignment="Bottom" 
+                               HorizontalAlignment="Left"
+                               Height="50"
+                               Width="400"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition ></ColumnDefinition>
+                            <ColumnDefinition Width="50"></ColumnDefinition>
+                            <ColumnDefinition Width="100"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="2" HorizontalAlignment="Right">
+                            <Button Content="Log out" 
+                                    Click="LogOutButton_Click"
+                                    HorizontalAlignment="Right" 
+                                    VerticalAlignment="Center"
+                                    Width="110"
+                                    FontSize="20" 
+                                    Background="White" 
+                                    Foreground="Blue" 
+                                    BorderBrush="Transparent"/>
+                        </Grid>
+                        <Grid Grid.Column="1" HorizontalAlignment="Right">
+                            <materialDesign:PackIcon Kind="AccountCancel"
+                                                     Foreground="DeepSkyBlue"
+                                                     Height="50"
+                                                     Width="50"
+                                                     VerticalAlignment="Center"
+                                                     HorizontalAlignment="Center"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="1" Background="#FF00CED1">
+
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Frame x:Name="Main"  
+                       Height="590" 
+                       Width="1095" 
+                       NavigationUIVisibility="Hidden"/>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Label Height="25" 
+                           Content="CopyRight @2022. SE - CS UIT VNU"  
+                           BorderBrush="Transparent"
+                           VerticalAlignment="Bottom"
+                           HorizontalAlignment="Left"
+                           FontWeight="Bold"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
