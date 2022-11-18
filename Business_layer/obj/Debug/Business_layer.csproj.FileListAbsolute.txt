@@ -1,0 +1,15 @@
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\bin\Debug\Business_layer.dll.config
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\bin\Debug\Business_layer.dll
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\bin\Debug\Business_layer.pdb
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\bin\Debug\Data_layer.dll
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\bin\Debug\EntityFramework.dll
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\bin\Debug\EntityFramework.SqlServer.dll
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\bin\Debug\Data_layer.pdb
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\bin\Debug\Data_layer.dll.config
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\bin\Debug\EntityFramework.xml
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\bin\Debug\EntityFramework.SqlServer.xml
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\obj\Debug\Business_layer.csproj.AssemblyReference.cache
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\obj\Debug\Business_layer.csproj.CoreCompileInputs.cache
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\obj\Debug\Business_layer.csproj.CopyComplete
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\obj\Debug\Business_layer.dll
+E:\2nd year\Introduction to software technology\Project\Code\Giao dien dang nhap\Business_layer\obj\Debug\Business_layer.pdb
